@@ -1,0 +1,29 @@
+#main{
+    min-height: 100vh;
+}
+
+#calc{
+    border-radius: 5px;
+    width: 250px;
+}
+
+#calc #valor{
+    border-radius: 5px;
+}
+
+#calc #valor input{
+    width: 100%;
+    height: 40px;
+}
+
+#calc #valor input:disabled{
+    background-color: #FFF;
+}
+
+#calc input{
+    height: 35px;
+    box-sizing: border-box;
+}
+.c{
+    width: 50%;
+}

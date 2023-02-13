@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./main.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main" class="container d-flex">
+        <div id="calc" class="p-3 bg-dark m-auto">
+            <div id="valor" class="p-1">
+                <input type="text" id="tela" value="0" disabled="true">
+            </div>
+
+            <div id="'num'bers" class="mt-2">
+                <div class="d-flex flex-wrap">
+                    <input type="button" value="C" class="col-6" onclick="verificaValor('acao', 'c')">
+                    <input type="button" value="/" class="col-3" onclick="verificaValor('acao', '/')">
+                    <input type="button" value="x" class="col-3" onclick="verificaValor('acao', '*')">
+                    <input type="button" value="7" class="col-3" onclick="verificaValor('num', '7')">
+                    <input type="button" value="8" class="col-3" onclick="verificaValor('num', '8')">
+                    <input type="button" value="9" class="col-3" onclick="verificaValor('num', '9')">
+                    <input type="button" value="-" class="col-3" onclick="verificaValor('acao', '-')">
+                    <input type="button" value="4" class="col-3" onclick="verificaValor('num', '4')">
+                    <input type="button" value="5" class="col-3" onclick="verificaValor('num', '5')">
+                    <input type="button" value="6" class="col-3" onclick="verificaValor('num', '6')">
+                    <input type="button" value="+" class="col-3" onclick="verificaValor('acao', '+')">
+                    <input type="button" value="1" class="col-3" onclick="verificaValor('num', '1')">
+                    <input type="button" value="2" class="col-3" onclick="verificaValor('num', '2')">
+                    <input type="button" value="3" class="col-3" onclick="verificaValor('num', '3')">
+                    <input type="button" id="equals" value="=" class="col-3" onclick="verificaValor('acao', '=') ">
+                    <input type="button" value="0" class="col-6" onclick="verificaValor('num', '0')">
+                    <input type="button" value="." class="col-6" onclick="verificaValor('acao', '.')">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
